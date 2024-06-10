@@ -17,18 +17,39 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+.submit-button {
+    background-color: #4CAF50; /* Зеленый фон */
+    color: white; /* Белый текст */
+    padding: 15px 32px; /* Отступы */
+    text-align: center; /* Центровка текста */
+    text-decoration: none; /* Убрать подчеркивание */
+    display: inline-block; /* Сделать элементом строчно-блочным */
+    font-size: 16px; /* Размер текста */
+    margin: 4px 2px; /* Отступы */
+    cursor: pointer; /* Указатель при наведении */
+    border: none; /* Убрать рамку */
+    border-radius: 12px; /* Скругленные углы */
+    transition: background-color 0.3s; /* Плавный переход при наведении */
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
+.submit-button:hover {
+    background-color: #45a049; /* Темно-зеленый фон при наведении */
 }
 
 h2 {
     margin-top: 20px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
