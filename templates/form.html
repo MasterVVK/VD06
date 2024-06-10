@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета пользователя</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Анкета пользователя</h1>
+    <form method="post">
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="city">Город:</label><br>
+        <input type="text" id="city" name="city"><br><br>
+        <label for="hobby">Хобби:</label><br>
+        <input type="text" id="hobby" name="hobby"><br><br>
+        <label for="age">Возраст:</label><br>
+        <input type="text" id="age" name="age"><br><br>
+        <input type="submit" value="Отправить">
+    </form>
+    {% if name and city and hobby and age %}
+        <h2>Введенные данные:</h2>
+        <p><strong>Имя:</strong> {{ name }}</p>
+        <p><strong>Город:</strong> {{ city }}</p>
+        <p><strong>Хобби:</strong> {{ hobby }}</p>
+        <p><strong>Возраст:</strong> {{ age }}</p>
+    {% endif %}
+</body>
+</html>
